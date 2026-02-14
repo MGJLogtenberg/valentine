@@ -23,18 +23,19 @@
     </div>
     
     <script>
-        document.getElementById("yesButton").addEventListener("click", function() {
-            const responseDiv = document.getElementById("response");
-            const initialCatImage = document.getElementById("initialCatImage");
-            const newCatContainer = document.getElementById("newCatContainer");
+    document.getElementById("yesButton").addEventListener("click", function() {
+        const responseDiv = document.getElementById("response");
+        const initialCatImage = document.getElementById("initialCatImage");
+        const newCatContainer = document.getElementById("newCatContainer");
 
-            initialCatImage.parentElement.classList.add("hidden");
-            newCatContainer.classList.remove("hidden");
+        initialCatImage.parentElement.classList.add("hidden");
+        newCatContainer.classList.remove("hidden");
 
-            responseDiv.textContent = "Yay! I love you! Click <a href="https://www.WordPress.com" target="_blank">here</a>🌸";
-            responseDiv.classList.remove("hidden");
-        });
+        responseDiv.innerHTML = "Yay! I love you! Click <a href='https://www.wordpress.com' target='_blank'>here</a> 🌸";
+        responseDiv.classList.remove("hidden");
+    });
     </script>
 </body>
 </html>
+
 
